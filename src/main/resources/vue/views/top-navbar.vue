@@ -8,11 +8,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-    <div class="navbar-nav">
-      <div class="nav-item text-nowrap">
-        <a class="nav-link px-3" href="/sign-out">Sign out</a>
-      </div>
-    </div>
+<!--    <div class="navbar-nav">-->
+<!--      <div class="nav-item text-nowrap">-->
+<!--        <a class="nav-link px-3" href="/sign-out">Sign out</a>-->
+<!--      </div>-->
+<!--    </div>-->
   </header>
 </template>
 <script>
