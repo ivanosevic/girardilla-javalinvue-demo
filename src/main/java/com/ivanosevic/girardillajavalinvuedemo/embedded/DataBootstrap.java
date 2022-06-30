@@ -19,6 +19,7 @@ public class DataBootstrap {
 
     public void dropTables() {
         try(Handle handle = jdbi.open()) {
+            handle.execute("DROP TABLE public.supplier");
             handle.execute("DROP TABLE public.country");
         }
     }

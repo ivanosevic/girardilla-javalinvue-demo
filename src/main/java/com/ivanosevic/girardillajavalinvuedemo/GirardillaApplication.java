@@ -6,6 +6,8 @@ import com.ivanosevic.girardillajavalinvuedemo.countries.CountryDao;
 import com.ivanosevic.girardillajavalinvuedemo.embedded.DataBootstrap;
 import com.ivanosevic.girardillajavalinvuedemo.embedded.Database;
 import com.ivanosevic.girardillajavalinvuedemo.embedded.DatabaseFactory;
+import com.ivanosevic.girardillajavalinvuedemo.suppliers.SupplierController;
+import com.ivanosevic.girardillajavalinvuedemo.suppliers.SupplierDao;
 import io.javalin.Javalin;
 import io.javalin.plugin.rendering.vue.VueComponent;
 import org.jdbi.v3.core.Jdbi;
@@ -31,10 +33,13 @@ public class GirardillaApplication {
         dataBootstrap.insertData();
 
         CountryDao countryDao = jdbi.onDemand(CountryDao.class);
+        SupplierDao supplierDao = jdbi.onDemand(SupplierDao.class);
 
         List<Controller> controllers = new ArrayList<>();
         Controller countryController = new CountryController(countryDao);
+        Controller supplierController = new SupplierController(supplierDao);
         controllers.add(countryController);
+        controllers.add(supplierController);
 
         Javalin app = Javalin.create(config -> {
             config.enableWebjars();
