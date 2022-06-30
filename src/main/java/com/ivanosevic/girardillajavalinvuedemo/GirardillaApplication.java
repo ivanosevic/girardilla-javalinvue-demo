@@ -49,6 +49,9 @@ public class GirardillaApplication {
          */
         app.get("/hello-world", new VueComponent("hello-world"));
         app.get("/", new VueComponent("home-page"));
+        app.get("/suppliers", new VueComponent("suppliers-page"));
+        app.get("/wines", new VueComponent("wines-page"));
+        app.get("/orders", new VueComponent("orders-page"));
 
         // Start web server
         app.start();

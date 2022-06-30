@@ -4,8 +4,8 @@
       <ul class="nav flex-column">
         <side-navbar-heading name="Main"></side-navbar-heading>
         <side-navbar-item name="Suppliers" to="/suppliers"></side-navbar-item>
-        <side-navbar-item name="Wines" to="/suppliers"></side-navbar-item>
-        <side-navbar-item name="Orders" to="/suppliers"></side-navbar-item>
+        <side-navbar-item name="Wines" to="/wines"></side-navbar-item>
+        <side-navbar-item name="Orders" to="/orders"></side-navbar-item>
         <side-navbar-heading name="Reports"></side-navbar-heading>
         <side-navbar-item name="Sales Last Month" to="/reports/last-month-sales"></side-navbar-item>
       </ul>
