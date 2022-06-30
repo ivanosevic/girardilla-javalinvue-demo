@@ -22,7 +22,9 @@
         <option v-for="country in countries.data" v-bind:value="country.name">{{ country.name }}</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-primary">Create</button>
+    <div class="mt-4">
+      <button type="submit" class="btn btn-primary">Create Supplier</button>
+    </div>
   </form>
 </template>
 <script>
